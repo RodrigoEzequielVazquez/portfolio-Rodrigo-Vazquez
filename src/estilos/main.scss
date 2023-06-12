@@ -1,0 +1,138 @@
+#contenedorInicio {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    padding: 1rem;
+    p{
+        font-size: 0.9rem;
+    }
+
+    #contendorInfoPersonal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        h1 {
+
+            font-size: 1.1rem;
+
+        }
+
+        h2 {
+            
+            font-size: 1rem;
+
+        }
+
+        p {
+            text-align: start;
+         
+        }
+    }
+
+    #contendorProyectos {
+        
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        h3 {
+            text-align: center;
+        }
+
+        div {
+
+            h4{
+                text-align: center;
+            }
+            .contenedorCarrousel {
+                display: flex;
+                justify-content: center;
+
+                .carousel {
+                    
+                    border: 2px solid rgb(16, 185, 236);
+
+                    .carousel-inner {
+
+                        .carousel-item {
+
+                            img {
+                                height: 8rem;
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .iconos{
+                display: flex;
+                justify-content: center;
+                img{
+                    margin: 0 1rem;
+                    width: 2rem;
+                    height: 1.8rem;
+                }
+            }
+
+
+
+        }
+
+
+    }
+
+    #contenedorHabilidades {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        h3 {
+            text-align: center;
+            margin: 0;
+        }
+
+        p {
+            text-align: center;
+            margin: 0;
+        }
+
+        .contenedorImgs {
+            display: flex;
+            justify-content: space-evenly;
+
+            img {
+                width: 4rem;
+                margin: 1rem;
+                margin: 0;
+            }
+        }
+
+    }
+}
+
+#contenedorEstudios{
+
+    div{
+
+        img{
+
+            width: 100%;
+        }
+    }
+}
+
+#contenedorFooter {
+    height: 10rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    img {
+
+        width: 3rem;
+        height: 3rem;
+    }
+}
