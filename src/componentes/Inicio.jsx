@@ -1,14 +1,19 @@
 import React from "react";
 import InfoPersonal from "./InfoPersonal";
-import Proyectos from "./Proyectos";
 import Habilidades from "./Habilidades";
+import Redes from "./Redes";
 
 const Inicio = () => {
     return (
-        <div id="contenedorInicio">
+        <section id="contenedorInicio">
             <InfoPersonal />
+           
+
+           <Redes titulo={"h3"}/>
+
+
             <Habilidades/>
-        </div>
+        </section>
     )
 }
 

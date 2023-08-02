@@ -1,13 +1,13 @@
 import React from "react";
+import Redes from "./Redes";
 
-const Footer = () =>{
-    return(
-        <div id="contenedorFooter">
+const Footer = () => {
+    return (
+        <footer id="contenedorFooter">
+             
+             <Redes titulo={"p"}/>
 
-            <img id="linkedin" src="/img/iconos/linkedin.png" alt="icono Linkedin" title="Linkedin" />
-            <img id="gitHub" src="/img/iconos/github.png" alt="icono GitHub" title="GitHub"/>
-            <img id="outlook" src="/img/iconos/outlook.png" alt="icono Linkedin" title="Outlook" />
-        </div>
+        </footer>
     )
 }
 export default Footer

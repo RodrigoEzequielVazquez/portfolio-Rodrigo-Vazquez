@@ -1,84 +1,86 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+
+}
+
+#root {
+    section {
+        padding: 3rem 1rem;
+    }
+}
+
+.navbar {
+    background-color: rgb(190, 190, 190);
+}
+
 #contenedorInicio {
     display: flex;
     flex-direction: column;
     gap: 5rem;
     padding: 1rem;
-    p{
-        font-size: 0.9rem;
-    }
 
-    #contendorInfoPersonal {
+    #contenedorInfoPersonal {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
 
         h1 {
+            font-size: 1.2rem;
+            margin: 0.5rem;
+            padding: 0.5rem;
+        }
 
-            font-size: 1.1rem;
-
+        img {
+            width: 12rem;
+            height: 12rem;
+            border-radius: 50%;
+            padding: 0.5rem;
+            background-color: rgb(190, 190, 190);
         }
 
         h2 {
-            
             font-size: 1rem;
+            margin: 0.5rem;
 
         }
 
         p {
             text-align: start;
-         
+            width: 85%;
+            margin: 0.5rem;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid red;
+            border-top: 1px solid red;
         }
     }
 
-    #contendorProyectos {
-        
+    #contacto {
         display: flex;
         flex-direction: column;
-        gap: 2rem;
+        align-items: center;
+        gap: 1rem;
+        border-bottom: 1px solid green;
+        border-top: 1px solid green;
+        padding: 0.5rem 0;
 
         h3 {
-            text-align: center;
+            font-size: 1.2rem;
         }
 
         div {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
 
-            h4{
-                text-align: center;
+            img {
+                width: 3.5rem;
+                height: 3.5rem;
             }
-            .contenedorCarrousel {
-                display: flex;
-                justify-content: center;
-
-                .carousel {
-                    
-                    border: 2px solid rgb(16, 185, 236);
-
-                    .carousel-inner {
-
-                        .carousel-item {
-
-                            img {
-                                height: 8rem;
-                                width: 100%;
-                            }
-                        }
-                    }
-                }
-            }
-
-            .iconos{
-                display: flex;
-                justify-content: center;
-                img{
-                    margin: 0 1rem;
-                    width: 2rem;
-                    height: 1.8rem;
-                }
-            }
-
-
-
         }
 
 
@@ -88,51 +90,343 @@
         display: flex;
         flex-direction: column;
         gap: 2rem;
+        padding: 0.5rem 0;
+        border-bottom: 1px solid blue;
+        border-top: 1px solid blue;
 
         h3 {
             text-align: center;
             margin: 0;
+            font-size: 1.2rem;
         }
 
         p {
             text-align: center;
             margin: 0;
+            font-size: 1.1rem;
         }
 
         .contenedorImgs {
             display: flex;
             justify-content: space-evenly;
-
+            height: 8rem;
+           
             img {
-                width: 4rem;
+                width: 3.5rem;
+                height: 3.5rem;
                 margin: 1rem;
-                margin: 0;
+    
+                &:hover{
+                    filter: brightness(1.25);
+                    border-bottom: 1px solid blue;
+                }
             }
         }
 
     }
 }
 
-#contenedorEstudios{
+#contenedorEstudios {
 
-    div{
+    div {
 
-        img{
+        h1 {
+            font-size: 1.2rem;
 
-            width: 100%;
+        }
+
+        p {
+            a {
+                color: black;
+            }
+        }
+
+    }
+
+    #contenedorCursos {
+        padding-top: 2rem;
+
+        .curso {
+            border-bottom: 1px solid blue;
+            margin-bottom: 1rem;
+
+            #nombreCurso {
+                display: flex;
+                align-items: baseline;
+                margin-bottom: 1rem;
+
+                h2 {
+                    font-size: 1.2rem;
+                    margin-right: 1rem;
+
+                }
+
+                #desarrolloWeb {
+                    color: red;
+                }
+
+                #js {
+                    width: 6.2rem;
+                    background-color: yellow;
+                    color: black;
+                }
+
+                #react {
+                    color: rgb(0, 110, 255);
+                }
+
+            }
+
+            h3 {
+                font-size: 1rem;
+                margin-bottom: 1rem;
+            }
+
+            a {
+
+                color: black;
+
+                p {
+                    font-size: 1rem;
+                    margin: 0;
+                }
+
+            }
+
         }
     }
 }
 
-#contenedorFooter {
-    height: 10rem;
+#contenedorProyectos {
+
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
 
-    img {
+    h3 {
+        text-align: center;
+        border-bottom: 1px solid gray;
+    }
 
-        width: 3rem;
-        height: 3rem;
+    .proyectos {
+
+        border-bottom: 2px solid rgb(16, 185, 236);
+        padding: 1rem;
+
+        h4 {
+            text-align: center;
+        }
+
+        .contenedorCarrousel {
+            display: flex;
+            justify-content: center;
+
+            .carousel {
+
+                width: 19rem;
+
+                .carousel-inner {
+
+                    border: 2px solid rgb(16, 185, 236);
+
+                    div {
+
+                        img {
+                            height: 9rem;
+                            width: 100%;
+                        }
+                    }
+                }
+
+
+            }
+        }
+
+        .iconos {
+            display: flex;
+            justify-content: center;
+
+            a {
+                text-decoration: none;
+
+                img {
+                    margin: 0 1rem;
+                    width: 2rem;
+                    height: 1.8rem;
+                }
+            }
+
+        }
+
+    }
+
+
+}
+
+#contenedorFooter {
+    height: 8.5rem;
+
+    display: flex;
+    justify-content: center;
+    background-color: rgb(190, 190, 190);
+
+    #contacto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-width: 14rem;
+
+        p {
+            font-size: 1.2rem;
+            text-align: center;
+
+        }
+
+        div {
+            display: flex;
+            justify-content: space-evenly;
+
+            img {
+                width: 3rem;
+                height: 3rem;
+            }
+
+        }
+
+
+    }
+
+}
+
+@media screen and (min-width: (500px)) {
+    
+#root {
+    section {
+        padding: 3rem 2rem;
+    }
+}
+
+    #contenedorProyectos {
+
+        .proyectos {
+
+            .contenedorCarrousel {
+
+                .carousel {
+
+                    width: 25rem;
+                    height: 12rem;
+
+                    .carousel-inner {
+
+                        border: 2px solid rgb(16, 185, 236);
+
+                        div {
+
+
+                            img {
+                                height: 100%;
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .descripcion {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                p {
+                    text-align: center;
+                    width: 80%;
+                }
+            }
+
+            .iconos {
+
+                a {
+
+                    img {
+                        width: 2.4rem;
+                        height: 2.2rem;
+                    }
+                }
+
+            }
+
+        }
+
+    }
+}
+
+
+@media screen and (min-width: (800px)) {
+    * {
+        font-size: 1rem;
+    }
+
+    #root {
+        section {
+            padding: 3rem 2rem;
+        }
+
+        #contenedorEstudios{
+            padding: 3rem 4rem;
+        }
+    }
+    #contenedorProyectos {
+
+        .proyectos {
+            align-self: center;
+            max-width: 950px;
+            gap: 1rem;
+            display: grid;
+            grid-template-areas:
+                "titulo titulo"
+                "carrousel descripcion "
+                "iconos iconos ";
+                grid-template-columns: 60% auto ;
+
+            h4 {
+                grid-area: titulo;
+            }
+
+            .contenedorCarrousel {
+                grid-area: carrousel;
+               
+                .carousel {
+                    width: 24rem;
+                    .carousel-inner {
+                      
+                        div {
+                        
+                            img {
+                                height: 11rem;
+                                width: 100%;
+                            }
+                        }
+                    }
+
+                }
+
+            }
+
+            .descripcion {
+                grid-area: descripcion;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+           
+            }
+
+            .iconos {
+                grid-area: iconos;
+
+            }
+
+        }
+
     }
 }

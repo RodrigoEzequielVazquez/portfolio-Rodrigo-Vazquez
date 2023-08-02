@@ -6,9 +6,11 @@ import Footer from "./componentes/Footer";
 import Menu from "./componentes/Menu";
 import Estudios from "./componentes/Estudios";
 import Proyectos from "./componentes/Proyectos";
+import IdiomaContexto from "./componentes/contexto/IdiomaContexto";
 
 function App() {
   return (
+    <IdiomaContexto>
     <BrowserRouter>
     <Menu/>
       <Routes>
@@ -18,6 +20,7 @@ function App() {
       </Routes>
       <Footer/>
     </BrowserRouter>
+    </IdiomaContexto>
   );
 }
 
