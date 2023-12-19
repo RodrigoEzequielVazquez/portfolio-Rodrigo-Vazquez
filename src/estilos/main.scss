@@ -54,8 +54,6 @@
             width: 85%;
             margin: 0.5rem;
             padding: 0.5rem 0;
-            border-bottom: 1px solid red;
-            border-top: 1px solid red;
         }
     }
 
@@ -64,8 +62,6 @@
         flex-direction: column;
         align-items: center;
         gap: 1rem;
-        border-bottom: 1px solid green;
-        border-top: 1px solid green;
         padding: 0.5rem 0;
 
         h3 {
@@ -91,8 +87,6 @@
         flex-direction: column;
         gap: 2rem;
         padding: 0.5rem 0;
-        border-bottom: 1px solid blue;
-        border-top: 1px solid blue;
 
         h3 {
             text-align: center;
@@ -107,20 +101,44 @@
         }
 
         .contenedorImgs {
-            display: flex;
-            justify-content: space-evenly;
-            height: 8rem;
-           
-            img {
-                width: 3.5rem;
-                height: 3.5rem;
-                margin: 1rem;
-    
-                &:hover{
-                    filter: brightness(1.25);
-                    border-bottom: 1px solid blue;
+
+            .contenedorIconos {
+
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+
+                .cardIconos{
+                    display: flex;
+                    flex-direction: column;  
+                    align-items: center;
+                    margin: 0.5rem;
+                    
+                    img {
+                        width: 3.5rem;
+                        height: 3.5rem;
+                        margin: 1rem;
+
+                    }
+
+                    .contenedorEstrellas {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+
+                        .estrella {
+                            background-color: goldenrod;
+                            width: 1rem;
+                            height: 1rem;
+                            margin: 0.5rem;
+                        }
+                        
+                    }
+
                 }
+
             }
+
         }
 
     }
@@ -299,12 +317,12 @@
 }
 
 @media screen and (min-width: (500px)) {
-    
-#root {
-    section {
-        padding: 3rem 2rem;
+
+    #root {
+        section {
+            padding: 3rem 2rem;
+        }
     }
-}
 
     #contenedorProyectos {
 
@@ -372,10 +390,11 @@
             padding: 3rem 2rem;
         }
 
-        #contenedorEstudios{
+        #contenedorEstudios {
             padding: 3rem 4rem;
         }
     }
+
     #contenedorProyectos {
 
         .proyectos {
@@ -387,7 +406,7 @@
                 "titulo titulo"
                 "carrousel descripcion "
                 "iconos iconos ";
-                grid-template-columns: 60% auto ;
+            grid-template-columns: 60% auto;
 
             h4 {
                 grid-area: titulo;
@@ -395,13 +414,14 @@
 
             .contenedorCarrousel {
                 grid-area: carrousel;
-               
+
                 .carousel {
                     width: 24rem;
+
                     .carousel-inner {
-                      
+
                         div {
-                        
+
                             img {
                                 height: 11rem;
                                 width: 100%;
@@ -418,7 +438,7 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-           
+
             }
 
             .iconos {
