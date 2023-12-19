@@ -1,35 +1,29 @@
-import React, {useContext} from "react";
+import React, { useContext, useEffect } from "react";
 import { idiomaContext } from "./contexto/IdiomaContexto"
+import ManejoIconos from "./ManejoIconos";
 
 const Habilidades = () => {
-    
+
+    const lenguajes = [{ title: "html", estrellas: 4 }, { title: "css", estrellas: 4 }, { title: "js", estrellas: 4 }]
+
+    const framYlib = [{ title: "bootstrap", estrellas: 3 }, { title: "react", estrellas: 3 }, { title: "sass", estrellas: 4 }, { title: "handlebars", estrellas: 4 }]
+
+    const bases = [{ title: "mongo", estrellas: 3}]
+
+    const tecnologias = [{ title: "git", estrellas: 4 }, { title: "github", estrellas: 4 }, { title: "node", estrellas: 0 }, { title: "npm", estrellas: 0 }, { title: "postman", estrellas: 3 }, { title: "jwt", estrellas: 3 }, { title: "nodemailer", estrellas: 2 }, { title: "stripe", estrellas: 2 }, { title: "twillio", estrellas: 2 }]
+
     const { idioma } = useContext(idiomaContext)
+
+
 
     return (
         <div id="contenedorHabilidades">
-            <h3>{idioma === "es" ? "Un paso por los lenguajes, frameworks y las tecnologias que manejo.": "A step through the languages, frameworks and technologies that I use."}</h3>
+            <h3>{idioma === "es" ? "Un paso por los lenguajes, frameworks, bases de datos y las tecnologias que manejo." : "A step through the languages, frameworks, data bases and technologies that I use."}</h3>
 
-            <p>{idioma === "es" ? "Lenguajes": "Languages"}</p>
-            <div className="contenedorImgs">
-                <img src="/img/iconos/html.png" alt={idioma === "es" ? "icono HTML" : "HTML icon"} title="HTML5" />
-                <img src="/img/iconos/css.png" alt={idioma === "es" ? "icono css" : "css icon"} title="CSS3"/>
-                <img src="/img/iconos/js.png" alt={idioma === "es" ? "icono Javascript" : "Javascript icon"} title="Javascript" />
-            </div>
-
-            <p>{idioma === "es" ? "Frameworks y librerías": "Frameworks and libraries"}</p>
-            <div className="contenedorImgs">
-                <img src="/img/iconos/bootstrap.png" alt={idioma === "es" ? "icono bootstrap" : "bootstrap icon"} title="Bootstrap" />
-                <img src="/img/iconos/react.png" alt={idioma === "es" ? "icono react" : "react icon"} title="React"/>
-                <img src="/img/iconos/sass.png" alt={idioma === "es" ? "icono sass" : "sass icon"} title="Sass" />
-            </div>
-
-            <p>{idioma === "es" ? "Otras tecnologias": "Another technologies"}</p>
-            <div className="contenedorImgs">
-                <img src="/img/iconos/git.png" alt={idioma === "es" ? "icono git" : "git icon"} title="Git" />
-                <img src="/img/iconos/github.png" alt={idioma === "es" ? "icono github" : "github icon"} title="Git-hub" />
-                <img src="/img/iconos/node.png" alt={idioma === "es" ? "icono node" : "node icon"} title="Node" />
-                <img src="/img/iconos/npm.png" alt={idioma === "es" ? "icono npm" : "npm icon"} title="NPM"/>
-            </div>
+            <ManejoIconos arrays={lenguajes} title={idioma === "es" ? "Lenguajes" : "Languages"} />
+            <ManejoIconos arrays={framYlib} title={idioma === "es" ? "Frameworks y librerías" : "Frameworks and libraries"} />
+            <ManejoIconos arrays={bases} title={idioma === "es" ? "Bases de datos" : "Data bases"} />
+            <ManejoIconos arrays={tecnologias} title={idioma === "es" ? "Otras tecnologias" : "Another technologies"} /> 
 
         </div>
     )
