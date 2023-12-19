@@ -10,7 +10,7 @@ const Habilidades = () => {
 
     const bases = [{ title: "mongo", estrellas: 3}]
 
-    const tecnologias = [{ title: "git", estrellas: 4 }, { title: "github", estrellas: 4 }, { title: "node", estrellas: 0 }, { title: "npm", estrellas: 0 }, { title: "postman", estrellas: 3 }, { title: "jwt", estrellas: 3 }, { title: "nodemailer", estrellas: 2 }, { title: "stripe", estrellas: 2 }, { title: "twillio", estrellas: 2 }]
+    const tecnologias = [{ title: "git", estrellas: 4 }, { title: "github", estrellas: 4 }, { title: "node", estrellas: 0 }, { title: "npm", estrellas: 0 }, { title: "postman", estrellas: 3 }, { title: "jwt", estrellas: 3 }, { title: "nodemailer", estrellas: 2 }, { title: "stripe", estrellas: 2 }, { title: "twilio", estrellas: 2 }]
 
     const { idioma } = useContext(idiomaContext)
 

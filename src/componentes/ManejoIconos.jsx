@@ -21,7 +21,7 @@ const ManejoIconos = ({ arrays, title }) => {
             <div className="contenedorIconos">
                 {arrays.map((imgs) =>
                     <div className="cardIconos"  >
-                        <img key={imgs.title} src={"/img/iconos/" + imgs.title + ".png"} alt={imgs.title} title={imgs.title.toUpperCase()} />
+                        <img key={imgs.title} id={imgs.title} src={"/img/iconos/" + imgs.title + ".png"} alt={imgs.title} title={imgs.title.toUpperCase()} />
                         <div className="contenedorEstrellas">
 
                             {generarEstrellas(imgs.estrellas)}
