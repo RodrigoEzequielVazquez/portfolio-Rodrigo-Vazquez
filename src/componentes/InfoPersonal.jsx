@@ -24,9 +24,9 @@ const InfoPersonal = () => {
 
     return (
         <div id="contenedorInfoPersonal">
-            <h1> {idioma === "es" ? saludo + "bienvenidos a mi portfolio" : "Hello, welcome to my protfolio"}</h1>
+            <h1> {idioma === "es" ? saludo + "bienvenidos a mi portfolio." : "Hello, welcome to my protfolio."}</h1>
 
-            <img src="/img/foto-personal/foto-inicio.jpeg" alt="" />
+            <img src="/img/foto-personal/foto-inicio.png" alt="" />
 
             <h2>{idioma === "es" ? "Soy Rodrigo Vazquez, desarrollador Full-Stack. " : "I am Rodrigo Vazquez, full-stack developer."} </h2>
 
