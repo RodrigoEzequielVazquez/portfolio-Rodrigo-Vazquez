@@ -40,16 +40,13 @@
             height: 12rem;
             border-radius: 50%;
             padding: 0.5rem;
-            background-color: rgb(190, 190, 190);
+            background-color: rgb(222, 110, 110);
         }
 
         h2 {
             font-size: 1rem;
             margin: 0.5rem;
             border-bottom: 1px solid rgb(190, 190, 190);
-            
-            
-
         }
 
         p {
@@ -81,8 +78,6 @@
                 height: 3.5rem;
             }
         }
-
-
     }
 
     #contenedorHabilidades {
@@ -179,7 +174,7 @@
         padding-top: 2rem;
 
         .curso {
-            border-bottom: 1px solid blue;
+            border-bottom: 1px solid rgb(190, 190, 190);
             margin-bottom: 1rem;
 
             #nombreCurso {
@@ -193,12 +188,17 @@
 
                 }
 
-                #desarrolloWeb {
+                #desarrolloweb {
                     color: red;
                 }
 
                 #js {
                     width: 6.2rem;
+                    background-color: yellow;
+                    color: black;
+                }
+                #backend {
+                    width: 8.1rem;
                     background-color: yellow;
                     color: black;
                 }
@@ -270,7 +270,6 @@
                     }
                 }
 
-
             }
         }
 
@@ -291,8 +290,6 @@
         }
 
     }
-
-
 }
 
 #contenedorFooter {
@@ -324,10 +321,7 @@
             }
 
         }
-
-
     }
-
 }
 
 @media screen and (min-width: (500px)) {
