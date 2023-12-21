@@ -10,7 +10,7 @@ const Proyectos = () => {
         <section id="contenedorProyectos">
             <h3>{idioma === "es" ? "Algunos de mis proyectos" : "Some of my projects"}</h3>
 
-            <h4>Proyectos Javascript</h4>
+            <h4>{idioma === "es" ? "Proyectos Javascript" : "Javascript projects"}</h4>
 
             <CarrouselProyectos idCarrousel={"carrouselClima"} titulo={idioma === "es" ? "Clima de distintas ciudades" : "Weather of different cities"} tituloDesc={idioma === "es" ? "Descripción" : "Description"} descripcion={idioma === "es" ? "Pagina responsive, que muestra el clima junto con otra informacion relacionada a la ciudad que se busque." : "Responsive website that displays the weather, along with information related to the city of interest."} codigo={"https://github.com/RodrigoEzequielVazquez/WeatherAPI"} img={<div className="carousel-inner"><div className="carousel-item active">
                 <img src="/img/proyectos/muestra-clima-bsas.png" className="d-block" alt="..." />
@@ -42,7 +42,7 @@ const Proyectos = () => {
                 </div>
             } />
 
-            <h4>Proyectos React.JS</h4>
+            <h4>{idioma === "es" ? "Proyectos React.Js" : "React.Js projects"}</h4>
 
             <CarrouselProyectos idCarrousel={"carrouselPeliculas"} titulo={idioma === "es" ? "Plataforma de peliculas" : "Movie platform"} tituloDesc={idioma === "es" ? "Descripción" : "Description"} descripcion={idioma === "es" ? "Pagina web responsive, de peliculas que se obtienen de la api de TMDB. Cuenta con una gran cantidad de peliculas, y ofrece la informacion principal, junto con un video y un link externo para poder encontrar el mejor lugar para poder verlas." : "Responsive website about movies, which can be obtained from TMDB's API. It contains lots of movies, offering the main info of each of them, along with a video and an external link that helps you find the best place to watch them."} codigo={"https://github.com/RodrigoEzequielVazquez/streaming-zone"} img={<div className="carousel-inner"><div className="carousel-item active">
                 <img src="/img/proyectos/muestra-info-peliculas.png" className="d-block" alt="..." />
