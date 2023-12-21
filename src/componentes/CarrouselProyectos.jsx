@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Carrousel = ({ img, idCarrousel, titulo, tituloDesc, descripcion, codigo }) => {
     return (
         <div className="proyectos">
-            <h4>{titulo}</h4>
+            <h5>{titulo}</h5>
             <div className="contenedorCarrousel">
                 <div id={idCarrousel} className="carousel slide">
                     {img}
