@@ -237,15 +237,19 @@
 
     h3 {
         text-align: center;
-        border-bottom: 1px solid gray;
+        border-bottom: 1px solid rgb(190, 190, 190);
+    }
+
+    h4{
+        text-align: center;
+        border-bottom: 2px solid rgb(190, 190, 190);
     }
 
     .proyectos {
-
-        border-bottom: 2px solid rgb(16, 185, 236);
+        border-bottom: 2px solid rgb(190, 190, 190);
         padding: 1rem;
 
-        h4 {
+        h5{
             text-align: center;
         }
 
@@ -253,23 +257,32 @@
             display: flex;
             justify-content: center;
 
-            .carousel {
-
+            .carousel { 
                 width: 19rem;
 
-                .carousel-inner {
+                button{
+                    
+                    span{
+                        background-color: rgb(190, 190, 190);
+                        border-radius: 1rem;
+                    }
+                }
 
-                    border: 2px solid rgb(16, 185, 236);
+                .carousel-inner {
+                    height: 100%;
+                    border: 2px solid rgb(190, 190, 190);
+
+                 
 
                     div {
-
+                        height: 100%;
+                
                         img {
                             height: 9rem;
                             width: 100%;
                         }
                     }
                 }
-
             }
         }
 
@@ -345,10 +358,9 @@
 
                     .carousel-inner {
 
-                        border: 2px solid rgb(16, 185, 236);
+                        border: 2px solid rgb(190, 190, 190);
 
                         div {
-
 
                             img {
                                 height: 100%;
@@ -379,11 +391,8 @@
                         height: 2.2rem;
                     }
                 }
-
             }
-
         }
-
     }
 }
 
@@ -407,7 +416,7 @@
 
         .proyectos {
             align-self: center;
-            max-width: 950px;
+            width: 800px;
             gap: 1rem;
             display: grid;
             grid-template-areas:
@@ -416,29 +425,16 @@
                 "iconos iconos ";
             grid-template-columns: 60% auto;
 
-            h4 {
-                grid-area: titulo;
+            h5 {
+                grid-area: titulo; 
             }
 
             .contenedorCarrousel {
                 grid-area: carrousel;
-
+           
                 .carousel {
                     width: 24rem;
-
-                    .carousel-inner {
-
-                        div {
-
-                            img {
-                                height: 11rem;
-                                width: 100%;
-                            }
-                        }
-                    }
-
                 }
-
             }
 
             .descripcion {
@@ -446,15 +442,11 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-
             }
-
             .iconos {
                 grid-area: iconos;
 
             }
-
         }
-
     }
 }
