@@ -18,12 +18,12 @@ const Habilidades = () => {
 
     return (
         <div id="contenedorHabilidades">
-            <h3>{idioma === "es" ? "Un paso por los lenguajes, frameworks, bases de datos y las tecnologias que manejo." : "A step through the languages, frameworks, data bases and technologies that I use."}</h3>
+            <h3>{idioma === "es" ? "Un paso por los lenguajes, frameworks, bases de datos y las tecnologías que manejo." : "A step through the languages, frameworks, data bases and technologies that I use."}</h3>
 
             <ManejoIconos arrays={lenguajes} title={idioma === "es" ? "Lenguajes" : "Languages"} />
             <ManejoIconos arrays={framYlib} title={idioma === "es" ? "Frameworks y librerías" : "Frameworks and libraries"} />
             <ManejoIconos arrays={bases} title={idioma === "es" ? "Bases de datos" : "Data bases"} />
-            <ManejoIconos arrays={tecnologias} title={idioma === "es" ? "Otras tecnologias" : "Another technologies"} /> 
+            <ManejoIconos arrays={tecnologias} title={idioma === "es" ? "Otras tecnologías" : "Another technologies"} /> 
 
         </div>
     )
