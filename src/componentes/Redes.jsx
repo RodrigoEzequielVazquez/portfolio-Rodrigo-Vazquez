@@ -14,11 +14,11 @@ const Redes = ({titulo}) => {
             <div id="redes">
 
                 <Link to="https://www.linkedin.com/in/rodrigo-vazquez/" target="blank">
-                    <img id="linkedin" src="/img/iconos/linkedin.png" alt={idioma === "es" ? "icono Linkedin" : "Linkedin icon"} title="Linkedin" />
+                    <img id="linkedin" src="/img/iconos/Linkedin.png" alt={idioma === "es" ? "icono Linkedin" : "Linkedin icon"} title="Linkedin" />
                 </Link>
 
                 <Link to="https://github.com/RodrigoEzequielVazquez" target="blank">
-                    <img id="gitHub" src="/img/iconos/github.png" alt={idioma === "es" ? "icono GitHub" : "GitHub icon"} title="GitHub" />
+                    <img id="gitHub" src="/img/iconos/GitHub.png" alt={idioma === "es" ? "icono GitHub" : "GitHub icon"} title="GitHub" />
                 </Link>
 
                 <Link to="mailto:rodrigo.ezequiel.vazquez.99@gmail.com">
