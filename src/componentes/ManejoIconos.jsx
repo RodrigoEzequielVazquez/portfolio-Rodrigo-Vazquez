@@ -1,16 +1,6 @@
 import React from "react";
 
-const ManejoIconos = ({ arrays, title }) => {
-
-    let key = 1
-    const generarEstrellas = (num) => {
-        const etiquetas = [];
-        for (let i = 0; i < num; i++) {
-            key ++
-            etiquetas.push(<img className="estrella" key={key} src="img/iconos/estrella.png" />);
-        }
-        return etiquetas;
-    };
+const ManejoIconos = ({ title, arrays }) => {
 
     return (
         <div className="contenedorImgs">
@@ -21,12 +11,9 @@ const ManejoIconos = ({ arrays, title }) => {
             <div className="contenedorIconos">
                 {arrays.map((imgs) =>
                     <div className="cardIconos"  >
-                        <img key={imgs.title} id={imgs.title} src={"/img/iconos/" + imgs.title + ".png"} alt={imgs.title} title={imgs.title.toUpperCase()} />
-                        <div className="contenedorEstrellas">
-
-                            {generarEstrellas(imgs.estrellas)}
-
-                        </div>
+                        <img key={imgs.title} id={imgs.title.toLowerCase()} src={"/img/iconos/" + imgs.title + ".png"} alt={imgs.title} title={imgs.title.toUpperCase()} />
+                        <p>{imgs.title}</p>
+                      
                     </div>
                 )}
 

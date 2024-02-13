@@ -1,16 +1,16 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import { idiomaContext } from "./contexto/IdiomaContexto"
 import ManejoIconos from "./ManejoIconos";
 
 const Habilidades = () => {
 
-    const lenguajes = [{ title: "html", estrellas: 4 }, { title: "css", estrellas: 4 }, { title: "js", estrellas: 4 }]
+    const lenguajes = [{ title: "HTML" }, { title: "CSS" }, { title: "SASS" }, { title: "Javascript" }, { title: "PHP" }, { title: "Python" }]
 
-    const framYlib = [{ title: "bootstrap", estrellas: 3 }, { title: "react", estrellas: 3 }, { title: "sass", estrellas: 4 }, { title: "handlebars", estrellas: 4 }]
+    const framYlib = [{ title: "Bootstrap" }, { title: "ReactJS" },{ title: "Django" }]
 
-    const bases = [{ title: "mongo", estrellas: 3}]
+    const bases = [{ title: "MongoDB" }, { title: "MySQL" }]
 
-    const tecnologias = [{ title: "git", estrellas: 4 }, { title: "github", estrellas: 4 }, { title: "node", estrellas: 0 }, { title: "npm", estrellas: 0 }, { title: "postman", estrellas: 3 }, { title: "jwt", estrellas: 3 }, { title: "nodemailer", estrellas: 2 }, { title: "stripe", estrellas: 2 }, { title: "twilio", estrellas: 2 }]
+    const tecnologias = [{ title: "Git" }, { title: "GitHub" }, { title: "Node" }, { title: "NPM" }, { title: "Postman" }, { title: "JWT" }, { title: "Handlebars" }]
 
     const { idioma } = useContext(idiomaContext)
 
@@ -23,7 +23,7 @@ const Habilidades = () => {
             <ManejoIconos arrays={lenguajes} title={idioma === "es" ? "Lenguajes" : "Languages"} />
             <ManejoIconos arrays={framYlib} title={idioma === "es" ? "Frameworks y librerías" : "Frameworks and libraries"} />
             <ManejoIconos arrays={bases} title={idioma === "es" ? "Bases de datos" : "Data bases"} />
-            <ManejoIconos arrays={tecnologias} title={idioma === "es" ? "Otras tecnologías" : "Another technologies"} /> 
+            <ManejoIconos arrays={tecnologias} title={idioma === "es" ? "Otras tecnologías" : "Another technologies"} />
 
         </div>
     )

@@ -25,6 +25,9 @@ const Menu = () => {
                             <li className="nav-item">
                                 <NavLink className={`nav-link ${({ isActive }) => isActive ? "active" : ""}`} aria-current="page" to={"/proyectos"}>{idioma === "es" ? "Proyectos" : "Projects" }</NavLink>
                             </li>
+                            <li className="nav-item">
+                                <Link className={`nav-link ${({ isActive }) => isActive ? "active" : ""}`} aria-current="page" target="_blank" to={"/pdf/CV-Vazquez-Rodrigo.pdf"}>{idioma === "es" ? "CV" : "CV" }</Link>
+                            </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 {idioma === "es" ? "Idioma" : "Language" }

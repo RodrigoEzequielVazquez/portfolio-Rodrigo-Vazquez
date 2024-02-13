@@ -28,18 +28,22 @@ const InfoPersonal = () => {
 
             <img src="/img/foto-personal/foto-inicio.png" alt="" />
 
-            <h2>{idioma === "es" ? "Soy Rodrigo Vazquez, desarrollador Full-Stack. " : "I am Rodrigo Vazquez, full-stack developer."} </h2>
+           {idioma === "es" ? <h2>Soy Rodrigo Vazquez, <b>desarrollador Full-Stack</b>. </h2>: <h2>I am Rodrigo Vazquez, <b>full-stack developer</b>.</h2> } 
 
             {idioma === "es" ? <p>
 
-                Empecé a estudiar programación a principios de julio de 2022. El lenguaje que mejor manejo y sobre el que más aprendí es JavaScript, ya que fue mi primer lenguaje y lo utilicé tanto en front-end como en back-end. Además de mis conocimientos en HTML5 y CSS3.
-                Actualmente, me encuentro estudiando Python con su framework Django y también PHP en conjunto con MySQL.
-                <br /> Hablando particularmente sobre mí, me considero una persona detallista, y que trata de mejorar y aprender constantemente. <br /> Mi objetivo actual es conseguir mi primer trabajo relacionado con la programación, mientras sigo aprendiendo nuevas tecnologías y mejorando mis conocimientos. <br /> A continuación verán mis conocimientos de programación y las herramientas y tecnologías que utilizo.</p>
+                Hace casi un año y medio completé mis dos primeros cursos
+                de desarrollo <b>Front-end</b>, donde aprendí <b>HTML5, CSS3, SASS, JS, Bootstrap</b> y a aplicar <b>diseños web responsive</b> , luego aprendí <b>React.JS</b>. Por otra parte, hace cuatro meses termine mis estudios como desarrollador <b>Back-end</b> aplicando JS. Recientemente también finalicé cursos de <b>Python</b> y <b>PHP</b> .
+                <br /> Las experiencias de trabajo en otros rubros me llevaron a
+                obtener habilidades que puedo aplicar también en el ámbito
+                de la programación, como el trabajo en equipo y la
+                comunicación efectiva.
+                <br /> Mi objetivo actual es conseguir mi primer trabajo relacionado con la programación, mientras sigo aprendiendo nuevas tecnologías y mejorando mis conocimientos. 
+                <br /> A continuación verán mis conocimientos de programación y las herramientas y tecnologías que utilizo.</p>
                 :
-                <p>I started studying programming at the beginning of July 2022.
-                    The language that I use best and that I learned the most about is Javascript, since it was my first language and I used it both in the front-end and in the back-end. In addition to my knowledge in HTML5 and CSS3. <br />
-                    I am currently studying Python with its Django framework and also PHP in conjunction with MySQL.
-                    Speaking particularly about myself, I consider myself a detail-oriented person, who tries to constantly improve and learn. <br /> My current goal is to get my first job related to programming, while I continue learning new technologies and improving my knowledge. <br /> Below you will see my programming knowledge and the tools and technologies I use.</p>}
+                <p>Almost a year and a half ago I completed my first two <b>Front-end</b> development courses, where I learned <b>HTML5, CSS3, SASS, JS, Bootstrap</b> and how to apply <b>responsive web designs</b>, then I learned <b>React.JS</b>. Four months ago I finished my studies as a  <b>Back-end</b> developer applying JS. I also recently completed <b>Python</b> and <b>PHP</b> courses.
+                <br />Work experiences in other areas led me to obtain skills that I can also apply in the field of programming, such as teamwork and effective communication.
+                <br /> My current goal is to get my first job related to programming, while I continue learning new technologies and improving my knowledge. <br /> Below you will see my programming knowledge and the tools and technologies I use.</p>}
 
         </div>
     )
